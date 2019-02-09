@@ -26,12 +26,13 @@ class World{
     var wheel1 : SCNNode!
     var wheel2 : SCNNode!
     var wheel3 : SCNNode!
+    var cameraNode: SCNNode!
     
     func initScene(view: UIView){
         
         
         // create and add a camera to the scene
-        let cameraNode = SCNNode()
+        cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
         scene.rootNode.addChildNode(cameraNode)
         
@@ -62,7 +63,7 @@ class World{
         scnView.scene = scene
         
         // allows the user to manipulate the camera
-        scnView.allowsCameraControl = true
+        //scnView.allowsCameraControl = true
         
         // show statistics such as fps and timing information
         scnView.showsStatistics = true
@@ -72,6 +73,8 @@ class World{
         
      
     }
+    
+    
     
     func initFloor(){
         
@@ -135,24 +138,20 @@ class World{
     
     func initPhysics(){
         sharedWorld.car1.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
-        //sharedWorld.car1.physicsBody?.isAffectedByGravity = true
         sharedWorld.car1.physicsBody?.damping = 0
         sharedWorld.car1.physicsBody?.friction = 0
         
         
         
         sharedWorld.car2.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
-        //sharedWorld.car2.physicsBody?.isAffectedByGravity = true
         sharedWorld.car2.physicsBody?.damping = 0
         sharedWorld.car2.physicsBody?.friction = 0
         
         sharedWorld.car3.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
-        //sharedWorld.car3.physicsBody?.isAffectedByGravity = true
         sharedWorld.car3.physicsBody?.damping = 0
         sharedWorld.car3.physicsBody?.friction = 0
         
         sharedWorld.bike.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
-        //sharedWorld.bike.physicsBody?.isAffectedByGravity = true
         sharedWorld.bike.physicsBody?.damping = 0
         sharedWorld.bike.physicsBody?.friction = 0
         

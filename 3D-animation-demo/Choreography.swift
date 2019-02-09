@@ -23,26 +23,15 @@ class Choreography{
         sharedWorld.bike.position = SCNVector3(x:2, y:0, z: 39)
     }
     func startCoreography(){
-        
-        
-        
-        
-        
-        // animate the 3d object
-        //ship.runAction(SCNAction.repeatForever(SCNAction.move(by: SCNVector3(x:0, y:0, z: 0.1), duration: 0.1)))
-        
-//       runAction(SCNAction.repeatForever(SCNAction.move(by: SCNVector3(x:0, y:0, z: -0.3), duration: 0.1))
-//        sharedWorld.car2.runAction(SCNAction.repeatForever(SCNAction.move(by: SCNVector3(x:0, y:0, z: -0.1), duration: 0.1)))
-//        sharedWorld.car3.runAction(SCNAction.repeatForever(SCNAction.move(by: SCNVector3(x:0, y:0, z: -0.1), duration: 0.1)))
-//        sharedWorld.bike.runAction(SCNAction.repeatForever(SCNAction.move(by: SCNVector3(x:0, y:0, z: -0.3), duration: 0.1)))
-        
-       
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.start()
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.start()
+            self.spin()
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.cameraChange()
         }
     }
     func start(){
@@ -53,14 +42,13 @@ class Choreography{
     }
     
     func spin(){
-        
-      //  sharedWorld.car3.sharedWorld.car3.rotate(by: SCNQuaternion(x:0,y:1,z:0,w:.pi/4), aroundTarget: SCNVector3(x:1, y:1, z: 1))
-      //  runAction(SCNAction.repeatForever(SCNAction.move(by: SCNVector3(x:0, y:0, z: -0.3), duration: 0.1))
-        sharedWorld.car3.runAction( SCNAction.rotate(by: .pi/6, around: SCNVector3(x:1, y:1, z: 0), duration: 1))
-        SCNAction.rotate(by: .pi/6, around: SCNVector3(x:1, y:1, z: 0), duration: 1)
-        //((SCNVector3(x:0, y:0, z: -7), at: SCNVector3(x:1, y:0, z: 0), asImpulse: true))
-        
-        
+  
+        sharedWorld.car3.physicsBody?.applyTorque(SCNVector4(x:0,y:1,z:0,w:.pi/4), asImpulse: true)
+    
+    }
+    func cameraChange(){
+        sharedWorld.cameraNode.runAction( SCNAction.rotate(by: .pi/6, around: SCNVector3(x:0, y:1, z: 0), duration: 4))
+        sharedWorld.cameraNode.runAction( SCNAction.move(by: SCNVector3(x:10, y:1, z: -20), duration: 4))
     }
 
 }
