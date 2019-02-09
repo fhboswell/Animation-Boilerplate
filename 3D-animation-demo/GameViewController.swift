@@ -21,8 +21,9 @@ class GameViewController: UIViewController {
     
     
     func addUIElements(){
-        controlButton = UIButton(frame: CGRect(x: 20, y: 40, width: 40, height: 40))
+        controlButton = UIButton(frame: CGRect(x: 20, y: 40, width: 80, height: 40))
         controlButton.backgroundColor = .red
+        
         controlButton.addTarget(self, action:  #selector(begin), for:  .touchUpInside)
         sceneView = SCNView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         sceneView.debugOptions = .showPhysicsShapes
@@ -31,14 +32,8 @@ class GameViewController: UIViewController {
     }
     
     @objc func begin(){
-        sharedWorld.initFloor()
-        sharedWorld.initVehicleNodes()
-        sharedWorld.initVehiclePhysics()
-//        sharedWorld.init3DObjects()
-//        sharedWorld.initPhysics()
-//
-//        sharedChoreography.initialPosition()
-//        sharedChoreography.startCoreography()
+        
+        sharedChoreography.startCoreography()
     }
     
     
@@ -48,7 +43,12 @@ class GameViewController: UIViewController {
         
         addUIElements()
         sharedWorld.initScene(view: sceneView)
-        begin()
+        sharedWorld.initFloor()
+        sharedWorld.init3DObjects()
+        sharedWorld.initPhysics()
+        
+        sharedChoreography.initialPosition()
+        
        
         
         

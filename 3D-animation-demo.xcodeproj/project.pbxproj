@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		94256D76220E6C6500795BDE /* concrete.png in Resources */ = {isa = PBXBuildFile; fileRef = 94256D75220E6C6400795BDE /* concrete.png */; };
+		946D680F220EA95000EB78F8 /* fourway.png in Resources */ = {isa = PBXBuildFile; fileRef = 946D680E220EA95000EB78F8 /* fourway.png */; };
+		946D6811220EAAA200EB78F8 /* road.png in Resources */ = {isa = PBXBuildFile; fileRef = 946D6810220EAAA200EB78F8 /* road.png */; };
 		94FCEAC3220D2BD000855A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCEAC2220D2BD000855A5A /* AppDelegate.swift */; };
 		94FCEAC5220D2BD000855A5A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FCEAC4220D2BD000855A5A /* art.scnassets */; };
 		94FCEAC7220D2BD000855A5A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCEAC6220D2BD000855A5A /* GameViewController.swift */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		94256D75220E6C6400795BDE /* concrete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = concrete.png; sourceTree = "<group>"; };
+		946D680E220EA95000EB78F8 /* fourway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fourway.png; sourceTree = "<group>"; };
+		946D6810220EAAA200EB78F8 /* road.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = road.png; sourceTree = "<group>"; };
 		94FCEABF220D2BD000855A5A /* 3D-animation-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3D-animation-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FCEAC2220D2BD000855A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94FCEAC4220D2BD000855A5A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -106,9 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				94FCEAC2220D2BD000855A5A /* AppDelegate.swift */,
+				946D6810220EAAA200EB78F8 /* road.png */,
 				94256D75220E6C6400795BDE /* concrete.png */,
 				94FCEAC4220D2BD000855A5A /* art.scnassets */,
 				94FCEAC6220D2BD000855A5A /* GameViewController.swift */,
+				946D680E220EA95000EB78F8 /* fourway.png */,
 				94FCEAF2220D623E00855A5A /* World.swift */,
 				94FCEAF4220D675A00855A5A /* Choreography.swift */,
 				94FCEAC8220D2BD000855A5A /* Main.storyboard */,
@@ -244,7 +250,9 @@
 				94FCEAC5220D2BD000855A5A /* art.scnassets in Resources */,
 				94FCEACF220D2BD100855A5A /* LaunchScreen.storyboard in Resources */,
 				94256D76220E6C6500795BDE /* concrete.png in Resources */,
+				946D680F220EA95000EB78F8 /* fourway.png in Resources */,
 				94FCEACC220D2BD100855A5A /* Assets.xcassets in Resources */,
+				946D6811220EAAA200EB78F8 /* road.png in Resources */,
 				94FCEACA220D2BD000855A5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
