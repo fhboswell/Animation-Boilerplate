@@ -43,12 +43,12 @@ class Choreography{
     
     func spin(){
   
-        sharedWorld.car3.physicsBody?.applyTorque(SCNVector4(x:0,y:1,z:0,w:.pi/4), asImpulse: true)
+        //sharedWorld.car3.physicsBody?.applyTorque(SCNVector4(x:0,y:1,z:0,w:.pi/4), asImpulse: true)
     
     }
     func cameraChange(){
-        sharedWorld.cameraNode.runAction( SCNAction.rotate(by: .pi/6, around: SCNVector3(x:0, y:1, z: 0), duration: 4))
-        sharedWorld.cameraNode.runAction( SCNAction.move(by: SCNVector3(x:10, y:1, z: -20), duration: 4))
+        sharedWorld.cameraNode.runAction( SCNAction.rotate(by: .pi/2, around: SCNVector3(x:0, y:1, z: 0), duration: 12))
+        sharedWorld.cameraNode.runAction( SCNAction.move(by: SCNVector3(x:20, y:1, z: -60), duration: 12))
     }
 
 }
