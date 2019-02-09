@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94256D76220E6C6500795BDE /* concrete.png in Resources */ = {isa = PBXBuildFile; fileRef = 94256D75220E6C6400795BDE /* concrete.png */; };
 		94FCEAC3220D2BD000855A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCEAC2220D2BD000855A5A /* AppDelegate.swift */; };
 		94FCEAC5220D2BD000855A5A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FCEAC4220D2BD000855A5A /* art.scnassets */; };
 		94FCEAC7220D2BD000855A5A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCEAC6220D2BD000855A5A /* GameViewController.swift */; };
@@ -15,6 +16,8 @@
 		94FCEACF220D2BD100855A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FCEACD220D2BD100855A5A /* LaunchScreen.storyboard */; };
 		94FCEADA220D2BD100855A5A /* _D_animation_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCEAD9220D2BD100855A5A /* _D_animation_demoTests.swift */; };
 		94FCEAE5220D2BD100855A5A /* _D_animation_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCEAE4220D2BD100855A5A /* _D_animation_demoUITests.swift */; };
+		94FCEAF3220D623E00855A5A /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCEAF2220D623E00855A5A /* World.swift */; };
+		94FCEAF5220D675A00855A5A /* Choreography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCEAF4220D675A00855A5A /* Choreography.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94256D75220E6C6400795BDE /* concrete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = concrete.png; sourceTree = "<group>"; };
 		94FCEABF220D2BD000855A5A /* 3D-animation-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3D-animation-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FCEAC2220D2BD000855A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94FCEAC4220D2BD000855A5A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		94FCEAE0220D2BD100855A5A /* 3D-animation-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "3D-animation-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FCEAE4220D2BD100855A5A /* _D_animation_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _D_animation_demoUITests.swift; sourceTree = "<group>"; };
 		94FCEAE6220D2BD100855A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FCEAF2220D623E00855A5A /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		94FCEAF4220D675A00855A5A /* Choreography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choreography.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				94FCEAC2220D2BD000855A5A /* AppDelegate.swift */,
+				94256D75220E6C6400795BDE /* concrete.png */,
 				94FCEAC4220D2BD000855A5A /* art.scnassets */,
 				94FCEAC6220D2BD000855A5A /* GameViewController.swift */,
+				94FCEAF2220D623E00855A5A /* World.swift */,
+				94FCEAF4220D675A00855A5A /* Choreography.swift */,
 				94FCEAC8220D2BD000855A5A /* Main.storyboard */,
 				94FCEACB220D2BD100855A5A /* Assets.xcassets */,
 				94FCEACD220D2BD100855A5A /* LaunchScreen.storyboard */,
@@ -234,6 +243,7 @@
 			files = (
 				94FCEAC5220D2BD000855A5A /* art.scnassets in Resources */,
 				94FCEACF220D2BD100855A5A /* LaunchScreen.storyboard in Resources */,
+				94256D76220E6C6500795BDE /* concrete.png in Resources */,
 				94FCEACC220D2BD100855A5A /* Assets.xcassets in Resources */,
 				94FCEACA220D2BD000855A5A /* Main.storyboard in Resources */,
 			);
@@ -260,6 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FCEAF5220D675A00855A5A /* Choreography.swift in Sources */,
+				94FCEAF3220D623E00855A5A /* World.swift in Sources */,
 				94FCEAC7220D2BD000855A5A /* GameViewController.swift in Sources */,
 				94FCEAC3220D2BD000855A5A /* AppDelegate.swift in Sources */,
 			);
@@ -437,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NN7HR27RDT;
 				INFOPLIST_FILE = "3D-animation-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NN7HR27RDT;
 				INFOPLIST_FILE = "3D-animation-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
